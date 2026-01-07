@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------
+   Global defaults
+-------------------------- */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    background-color: #090a0f;
+    color: #e6e6e6;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* -------------------------
+   ROOT SPACE BACKGROUND
+-------------------------- */
+.app-root {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    /* Base space gradient */
+    background: radial-gradient(
+            ellipse at bottom,
+            #1b2735 0%,
+            #090a0f 100%
+    );
+}
+
+/* Star layers */
+.app-root::before,
+.app-root::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat;
+    pointer-events: none;
+}
+
+/* Small stars */
+.app-root::before {
+    background-image: radial-gradient(1px 1px at 20px 30px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 200px 150px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 400px 80px, rgba(255, 255, 255, 0.9), transparent);
+    background-size: 300px 300px;
+    animation: starsMove 120s linear infinite;
+}
+
+/* Dim far stars */
+.app-root::after {
+    background-image: radial-gradient(1px 1px at 50px 100px, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 300px 200px, rgba(255, 255, 255, 0.3), transparent);
+    background-size: 400px 400px;
+    animation: starsMove 200s linear infinite;
+}
+
+/* Content above background */
+.app-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animation */
+@keyframes starsMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+.section {
+    position: relative;
+    min-height: 100vh;
+    padding: clamp(6rem, 12vh, 10rem)1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

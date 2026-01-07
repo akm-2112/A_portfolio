@@ -1,0 +1,38 @@
+.space {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background: radial-gradient(ellipse at bottom, #17212c 0%, #090a0f 100%);
+    overflow: hidden;
+}
+
+/* stars */
+.space::before,
+.space::after {
+    content: "";
+    position: absolute;
+    inset: -2000px 0;
+    background-repeat: revert;
+    background-size: 300px 300px;
+}
+
+.space::before {
+    background-image: radial-gradient(1px 1px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 100px 150px, white, transparent);
+    animation: stars 100s linear infinite;
+}
+
+.space::after {
+    background-image: radial-gradient(1px 1px at 50px 80px, white, transparent);
+    opacity: 0.5;
+    animation: stars 160s linear infinite;
+}
+
+@keyframes stars {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px);
+    }
+}
