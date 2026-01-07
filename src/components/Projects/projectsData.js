@@ -10,8 +10,8 @@ export const projectsData = [
             "Personal Portfolio Website is a modern personal showcase built with React and Tailwind CSS, featuring smooth scroll-driven animations and a space-inspired UI.",
         tech: ["React", "Framer Motion", "CSS"],
         links: {
-            github: "https://github.com/yourname/portfolio",
-            live: "#",
+            github: "https://github.com/akm-2112/A_portfolio",
+            live: "https://aungkyawmoe.vercel.app",
         },
     },
 
@@ -23,7 +23,7 @@ export const projectsData = [
             "Mobile + Web platform built during Code2Career Hackathon 2025 to help families connect, share real-time safety status, and send SOS alerts during natural disasters.",
         tech: ["PHP", "Laravel", "React","Flutter"],
         links: {
-            github: "https://github.com/yourname/moon",
+            github: "https://github.com/akm-2112/BayyKinn",
             live: "",
         },
     },
@@ -36,7 +36,7 @@ export const projectsData = [
             "Moon Jewelry is a luxury-style e-commerce website developed as a school assignment, focusing on both frontend design and backend functionality. The project showcases jewelry and accessories through a clean, elegant interface inspired by high-end brands such as Cartier, Tiffany & Co., Louis Vuitton, and Chanel.",
         tech: ["PHP", "Laravel", "JavaScript",],
         links: {
-            github: "https://github.com/yourname/moon",
+            github: "https://github.com/akm-2112/My_First_E-Commerce_project",
             live: "",
         },
     },
@@ -49,7 +49,7 @@ export const projectsData = [
             "A Job Listings website built as a mini project to practice React.js fundamentals. The project focuses on component-based architecture, UI state management, and responsive layout design using Tailwind CSS.",
         tech: ["React","Tailwind"],
         links: {
-            github: "https://github.com/yourname/portfolio",
+            github: "https://github.com/akm-2112/React-JobListingsWebsite",
             live: "",
         },
     },
