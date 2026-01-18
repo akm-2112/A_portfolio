@@ -26,7 +26,7 @@ export const skillsData = {
         { name: "Tailwind", level: 80, icon: SiTailwindcss, color: "#06B6D4" },
         { name: "MySQL", level: 85, icon: SiMysql, color: "#4479A1" },
         { name: "MongoDB", level: 70, icon: SiMongodb, color: "#47A248" },
-        { name: "Redux", level: 55, icon: SiRedux, color: "#764ABC" },
+
 
     ],
     tools: [
