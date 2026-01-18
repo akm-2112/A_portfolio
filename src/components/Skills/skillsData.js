@@ -18,7 +18,6 @@ export const skillsData = {
         { name: "JavaScript", level: 85, icon: SiJavascript, color: "#F7DF1E" },
         { name: "React.js", level: 75, icon: SiReact, color: "#61DAFB" },
         { name: "Node.js", level: 60, icon: SiNodedotjs, color: "#339933" },
-        { name: "Express.js", level: 60, icon: SiExpress, color: "#ffffff" },
         { name: "TypeScript", level: 55, icon: SiTypescript, color: "#3178C6" },
         { name: "Next.js", level: 55, icon: SiNextdotjs, color: "#ffffff" },
         { name: "PHP", level: 80, icon: SiPhp, color: "#777BB4" },
