@@ -15,13 +15,13 @@ import {Code, Terminal} from "lucide-react";
 
 export const skillsData = {
     tech: [
+        { name: "PHP", level: 85, icon: SiPhp, color: "#777BB4" },
+        { name: "Laravel", level: 85, icon: SiLaravel, color: "#FF2D20" },
         { name: "JavaScript", level: 85, icon: SiJavascript, color: "#F7DF1E" },
-        { name: "React.js", level: 75, icon: SiReact, color: "#61DAFB" },
-        { name: "Node.js", level: 60, icon: SiNodedotjs, color: "#339933" },
+        { name: "React.js", level: 70, icon: SiReact, color: "#61DAFB" },
+        { name: "Node.js", level: 55, icon: SiNodedotjs, color: "#339933" },
         { name: "TypeScript", level: 55, icon: SiTypescript, color: "#3178C6" },
         { name: "Next.js", level: 55, icon: SiNextdotjs, color: "#ffffff" },
-        { name: "PHP", level: 80, icon: SiPhp, color: "#777BB4" },
-        { name: "Laravel", level: 85, icon: SiLaravel, color: "#FF2D20" },
         { name: "Tailwind", level: 80, icon: SiTailwindcss, color: "#06B6D4" },
         { name: "MySQL", level: 85, icon: SiMysql, color: "#4479A1" },
         { name: "MongoDB", level: 70, icon: SiMongodb, color: "#47A248" },

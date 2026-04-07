@@ -1,9 +1,8 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const tabs = [
-    {id: "tech", label: "Tech Stack"},
-    {id: "tools", label: "Tools"},
-    {id: "experience", label: "Experience"},
+    { id: "tech", label: "Tech Stack" },
+    { id: "tools", label: "Tools" },
 ];
 
 export default function SkillsTabs({ activeTab, onTabClick }) {
@@ -28,7 +27,7 @@ export default function SkillsTabs({ activeTab, onTabClick }) {
                                 type: "spring",
                                 stiffness: 300,
                                 damping: 30,
-                                mass:0.8
+                                mass: 0.8
                             }}
                         />
                     )}

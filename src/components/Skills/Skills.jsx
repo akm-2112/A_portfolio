@@ -8,7 +8,6 @@ import "../../styles/skills.css";
 const blocks = [
     { id: "tech", label: "Tech Stack" },
     { id: "tools", label: "Tools" },
-    { id: "experience", label: "Experience" },
 ];
 
 export default function SkillsSection() {
@@ -43,7 +42,7 @@ export default function SkillsSection() {
         <section id="skills" className="section skills-section" ref={sectionRef}>
             <motion.div
                 className="skills-glass"
-                initial={{ opacity: 0, y: initialY, scale:0.85 }}
+                initial={{ opacity: 0, y: initialY, scale: 0.85 }}
                 animate={isInView
                     ? { opacity: 1, y: 0, scale: 1 }
                     : { opacity: 0, y: 100, scale: 0.85 }

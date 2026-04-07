@@ -2,11 +2,12 @@ import SpaceBackground from "./components/SpaceBackground";
 import Hero from "./components/Hero.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Skills from "./components/Skills/Skills.jsx";
+import Experience from "./components/Experience/Experience.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
-import {useEffect} from "react";
-import {initLenis} from "./utils/lenis.js";
+import { useEffect } from "react";
+import { initLenis } from "./utils/lenis.js";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -18,16 +19,17 @@ function App() {
     }, []);
     return (
         <div className="relative min-h-screen text-white overflow-hidden">
-            <SpaceBackground/>
+            <SpaceBackground />
             <main className="relative z-10">
-                <Hero/>
-                <About/>
-                <Skills/>
-                <Projects/>
-                <Contact/>
-                <Navigation/>
+                <Hero />
+                <About />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Contact />
+                <Navigation />
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 }

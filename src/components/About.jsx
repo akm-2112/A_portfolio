@@ -6,8 +6,8 @@
 //     )
 // }
 
-import React, {useRef} from 'react';
-import {motion, useMotionValue, useSpring, useTransform} from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import {
     Code2,
     Cpu,
@@ -17,14 +17,19 @@ import {
     Terminal,
     Database,
     Layout,
-    Rocket, Dot
+    Rocket, Dot,
+    CheckCheckIcon,
+    CheckIcon,
+    CheckCircleIcon,
+    GoalIcon,
+    MessageCircleCodeIcon
 } from 'lucide-react';
-import {DiReact} from "react-icons/di";
-import {LiaLaravel, LiaReact} from "react-icons/lia";
+import { DiReact } from "react-icons/di";
+import { LiaLaravel, LiaReact } from "react-icons/lia";
 import ScrollReveal from "./ScrollReveal.jsx";
 
 // --- Reusable Tilt Card Component ---
-const TiltCard = ({children, className}) => {
+const TiltCard = ({ children, className }) => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
 
@@ -55,10 +60,10 @@ const TiltCard = ({children, className}) => {
         <motion.div
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            style={{rotateX, rotateY, transformStyle: "preserve-3d"}}
+            style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
             className={`relative ${className}`}
         >
-            <div style={{transform: "translateZ(50px)"}} className="h-full">
+            <div style={{ transform: "translateZ(50px)" }} className="h-full">
                 {children}
             </div>
         </motion.div>
@@ -67,12 +72,12 @@ const TiltCard = ({children, className}) => {
 
 const About = () => {
     const skills = [
-        {name: "React", icon: <LiaReact size={16}/>, color: "text-blue-400"},
-        {name: "Node.js", icon: <Database size={16}/>, color: "text-green-400"},
-        {name: "Tailwind", icon: <Globe size={16}/>, color: "text-cyan-400"},
-        {name: "JavaScript", icon: <Code2 size={16}/>, color: "text-yellow-400"},
-        {name: "PHP", icon: <Terminal size={16}/>, color: "text-blue-500"},
-        {name: "Laravel", icon: <LiaLaravel size={16}/>, color: "text-red-400"},
+        { name: "PHP", icon: <Terminal size={16} />, color: "text-blue-500" },
+        { name: "Laravel", icon: <LiaLaravel size={16} />, color: "text-red-400" },
+        { name: "React", icon: <LiaReact size={16} />, color: "text-blue-400" },
+        { name: "Tailwind", icon: <Globe size={16} />, color: "text-cyan-400" },
+        { name: "JavaScript", icon: <Code2 size={16} />, color: "text-yellow-400" },
+
     ];
 
     return (
@@ -81,13 +86,13 @@ const About = () => {
                 {/* Background Nebula Effects */}
                 {/*<div className="absolute top-0 -left-20 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />*/}
                 <div
-                    className="absolute bottom-0 -right-20 w-96 h-96 rounded-full pointer-events-none"/>
+                    className="absolute bottom-0 -right-20 w-96 h-96 rounded-full pointer-events-none" />
 
                 {/* Section Header */}
                 <motion.div
-                    initial={{opacity: 0, y: 20}}
-                    whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: true}}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-5xl font-extrabold tracking-tight bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent mb-4">
@@ -107,14 +112,14 @@ const About = () => {
                             className="h-full p-8 rounded-3xl bg-white/[0.003] border border-white/10 backdrop-blur-0 flex flex-col justify-between group overflow-hidden">
                             <div className="relative z-10">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="p-2 bg-indigo-500/20 rounded-lg text-indigo-400">
-                                        <Rocket size={20}/>
+                                    <div className="p-2 bg-white/10 rounded-lg text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+                                        <MessageCircleCodeIcon size={20} />
                                     </div>
-                                    <span className="text-xs font-bold uppercase tracking-tighter text-indigo-400">Mission Log</span>
+                                    <span className="text-xs font-bold uppercase tracking-tighter text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">Mission Log</span>
                                 </div>
-                                <h3 className="text-3xl font-bold mb-6 leading-tight">
+                                <h3 className="text-2xl font-bold mb-6 leading-tight">
                                     Focused on turning <span
-                                    className="text-indigo-400">real ideas </span>
+                                        className="text-white text-4xl drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">real ideas </span>
                                     into reliable web applications.
                                 </h3>
                                 <p className="text-gray-400 text-lg leading-relaxed mb-6">
@@ -144,15 +149,15 @@ const About = () => {
                         <div
                             className="h-full p-8 rounded-3xl bg-white/[0.003] border border-white/10 backdrop-blur-1 group">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-2 bg-indigo-500/20 rounded-lg text-indigo-400">
-                                    <Cpu size={20}/>
+                                <div className="p-2 bg-white/10 rounded-lg text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+                                    <CheckCircleIcon size={20} />
                                 </div>
-                                <span className="text-xs font-bold uppercase tracking-tighter text-indigo-400">My Current Stack</span>
+                                <span className="text-xs font-bold uppercase tracking-tighter text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">My Current Stack</span>
                             </div>
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                 {skills.map((skill, i) => (
                                     <div key={i}
-                                         className="flex items-center gap-2 p-2 rounded-xl bg-white/5 border border-white/5 hover:border-purple-500/30 transition-all">
+                                        className="flex items-center gap-2 p-2 rounded-xl bg-white/5 border border-white/5 hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all">
                                         <span className={skill.color}>{skill.icon}</span>
                                         <span className="text-xs font-medium">{skill.name}</span>
                                     </div>
@@ -165,13 +170,13 @@ const About = () => {
                     <TiltCard className="md:col-span-1">
                         <div
                             className="h-full p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl flex flex-col items-center justify-center text-center">
-                            <div
+                            {/* <div
                                 className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 p-[1px] mb-4">
                                 <div
                                     className="w-full h-full rounded-2xl bg-[#0a0a0a] flex items-center justify-center">
                                     <User size={30} className="text-white"/>
                                 </div>
-                            </div>
+                            </div> */}
                             <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-2">Approach</p>
                             <p className="text-sm italic text-gray-300">"Learn by building. Improve by doing."</p>
                         </div>
@@ -182,7 +187,7 @@ const About = () => {
                         <div
                             className="h-full p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl flex flex-col  justify-center">
                             <div className="flex items-center gap-2 mb-2">
-                                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"/>
+                                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                                 <span className="text-[10px] font-bold uppercase text-gray-400">Availability</span>
                             </div>
                             <p className="text-sm font-bold text-white">
