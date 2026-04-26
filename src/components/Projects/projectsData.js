@@ -33,7 +33,7 @@ export const projectsData = [
         title: "Moon E-Commerce",
         image: "/projectsPicPortfo/moon.jpeg",
         description:
-            "Moon Jewelry is a luxury-style e-commerce website developed as a school assignment, focusing on both frontend design and backend functionality. The project showcases jewelry and accessories through a clean, elegant interface inspired by high-end brands such as Cartier, Tiffany & Co., Louis Vuitton, and Chanel.",
+            "Moon Jewelry is a luxury-style e-commerce website developed as a school assignment, focusing on both frontend design and backend functionality.",
         tech: ["PHP", "Laravel", "JavaScript",],
         links: {
             github: "https://github.com/akm-2112/My_First_E-Commerce_project",
@@ -42,12 +42,12 @@ export const projectsData = [
     },
 
     {
-        id: "reactjobs",
-        title: "Job Listings Website",
-        image: "/projectsPicPortfo/ReactJobs.png",
+        id: "ai_assistant",
+        title: "Ai Personal Assistant",
+        image: "/projectsPicPortfo/ai_personal_assistant.png",
         description:
-            "A Job Listings website built as a mini project to practice React.js fundamentals. The project focuses on component-based architecture, UI state management, and responsive layout design using Tailwind CSS.",
-        tech: ["React","Tailwind"],
+            "An AI-powered personal assistant built with Laravel 13 and the Laravel AI SDK to automate life management. It features a modular expense tracker, currently in active development to test the latest AI tool orchestration.",
+        tech: ["Laravel","Inertia","React","Tailwind"],
         links: {
             github: "https://github.com/akm-2112/React-JobListingsWebsite",
             live: "",
