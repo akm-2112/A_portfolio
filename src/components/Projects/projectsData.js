@@ -43,13 +43,13 @@ export const projectsData = [
 
     {
         id: "ai_assistant",
-        title: "Ai Personal Assistant",
+        title: "AI Personal Assistant",
         image: "/projectsPicPortfo/ai_personal_assistant.png",
         description:
             "An AI-powered personal assistant built with Laravel 13 and the Laravel AI SDK to automate life management. It features a modular expense tracker, currently in active development to test the latest AI tool orchestration.",
         tech: ["Laravel","Inertia","React","Tailwind"],
         links: {
-            github: "https://github.com/akm-2112/React-JobListingsWebsite",
+            github: "https://github.com/akm-2112/ai-personal-assistant",
             live: "",
         },
     },

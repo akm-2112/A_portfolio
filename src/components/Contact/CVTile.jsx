@@ -7,7 +7,7 @@ export default function CVTile() {
         // <GlassTile>
             <motion.a
                 href={myCV}
-                download
+                download="AungKyawMoeCV.pdf"
                 className=" flex justify-evenly items-center hero-btn primary"
                 whileHover={{scale: 1.05, y: -2}}
                 whileTap={{scale: 0.9, y: 1}}
@@ -15,7 +15,7 @@ export default function CVTile() {
             >
                 <div className=" flex flex-col justify-center items-center">
                     <span>Download CV</span>
-                    <p className="tile-sub">PDF · 118KB</p>
+                    <p className="tile-sub">PDF</p>
                 </div>
 
                 <Download/>

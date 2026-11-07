@@ -63,7 +63,7 @@ export default function Hero() {
 
                     </motion.h1>
                     <motion.p className='hero-subtitle'>
-                        Junior Web Developer
+                        Full Stack Developer · PHP &amp; Laravel
                     </motion.p>
                     <div className='flex items-center justify-around gap-3'>
                         <motion.a

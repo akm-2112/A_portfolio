@@ -6,25 +6,15 @@
 //     )
 // }
 
-import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import {
     Code2,
-    Cpu,
     Globe,
-    Sparkles,
-    User,
     Terminal,
     Database,
-    Layout,
-    Rocket, Dot,
-    CheckCheckIcon,
-    CheckIcon,
     CheckCircleIcon,
-    GoalIcon,
     MessageCircleCodeIcon
 } from 'lucide-react';
-import { DiReact } from "react-icons/di";
 import { LiaLaravel, LiaReact } from "react-icons/lia";
 import ScrollReveal from "./ScrollReveal.jsx";
 
@@ -74,6 +64,7 @@ const About = () => {
     const skills = [
         { name: "PHP", icon: <Terminal size={16} />, color: "text-blue-500" },
         { name: "Laravel", icon: <LiaLaravel size={16} />, color: "text-red-400" },
+        { name: "MySQL", icon: <Database size={16} />, color: "text-emerald-400" },
         { name: "React", icon: <LiaReact size={16} />, color: "text-blue-400" },
         { name: "Tailwind", icon: <Globe size={16} />, color: "text-cyan-400" },
         { name: "JavaScript", icon: <Code2 size={16} />, color: "text-yellow-400" },
@@ -96,10 +87,10 @@ const About = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-5xl font-extrabold tracking-tight bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent mb-4">
-                        The Developer
+                        About Me
                     </h2>
                     <p className="text-gray-400 font-mono text-sm tracking-widest uppercase italic">
-                        learning, building and improving through projects and challenges
+                        Laravel development for travel and reservations
                     </p>
                 </motion.div>
 
@@ -115,29 +106,27 @@ const About = () => {
                                     <div className="p-2 bg-white/10 rounded-lg text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
                                         <MessageCircleCodeIcon size={20} />
                                     </div>
-                                    <span className="text-xs font-bold uppercase tracking-tighter text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">Mission Log</span>
+                                    <span className="text-xs font-bold uppercase tracking-tighter text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">What I Do</span>
                                 </div>
                                 <h3 className="text-2xl font-bold mb-6 leading-tight">
-                                    Focused on turning <span
-                                        className="text-white text-4xl drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">real ideas </span>
-                                    into reliable web applications.
+                                    I build and maintain travel booking systems.
                                 </h3>
                                 <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                                    I'm <span className="text-white font-bold text-xl">Aung Kyaw Moe</span>, an
-                                    early-career web developer working with modern front-end tools and backend basics.
-                                    I’m currently open to job opportunities, freelance work, and collaborations.
+                                    I'm <span className="text-white font-bold text-xl">Aung Kyaw Moe</span>, a Full Stack Developer at GMBF Group.
+                                    I work mainly with PHP, Laravel, and MySQL on booking, pricing, and payment flows.
+                                    I currently own the database and API design for a new hotel booking module and guide its implementation.
                                 </p>
                             </div>
 
                             <div className="flex gap-6 relative z-10">
                                 <div className="flex flex-col">
-                                    <span className="text-xl font-bold text-white">Early-career Developer</span>
-                                    <span className="text-[12px] text-gray-500 uppercase tracking-widest">Active Project Building</span>
+                                    <span className="text-xl font-bold text-white">Production systems</span>
+                                    <span className="text-[12px] text-gray-500 uppercase tracking-widest">Booking and payments</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-xl font-bold text-white">4+ Complete Projects</span>
+                                    <span className="text-xl font-bold text-white">System design</span>
                                     <span
-                                        className="text-[12px] text-gray-500 uppercase tracking-widest">Web-focused</span>
+                                        className="text-[12px] text-gray-500 uppercase tracking-widest">Databases and APIs</span>
                                 </div>
                             </div>
 
@@ -178,7 +167,7 @@ const About = () => {
                                 </div>
                             </div> */}
                             <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-2">Approach</p>
-                            <p className="text-sm italic text-gray-300">"Learn by building. Improve by doing."</p>
+                            <p className="text-sm italic text-gray-300">Keep pricing and inventory rules consistent across booking channels.</p>
                         </div>
                     </TiltCard>
 

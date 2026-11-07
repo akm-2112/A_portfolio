@@ -18,7 +18,7 @@ export default function Experience() {
                     <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">
                         Work Experience
                     </h2>
-                    <p className="text-slate-400 text-lg">My professional journey so far.</p>
+                    <p className="text-slate-400 text-lg">Production booking systems and freelance Laravel work.</p>
                 </motion.div>
 
                 {/* Vertical Timeline Container */}
@@ -26,7 +26,7 @@ export default function Experience() {
 
                     {/* The Glowing Line */}
                     <div className="absolute left-8 md:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-blue-500/20 via-emerald-500/40 to-transparent -translate-x-1/2 rounded-full hidden md:block" />
-                    <div className="absolute left-8 md:hidden top-4 bottom-4 w-px bg-gradient-to-b from-blue-500/20 via-emerald-500/40 to-transparent -translate-x-1/2 rounded-full" />
+                    <div className="absolute left-4 md:hidden top-4 bottom-4 w-px bg-gradient-to-b from-blue-500/20 via-emerald-500/40 to-transparent -translate-x-1/2 rounded-full" />
 
                     {/* Experience Items */}
                     <div className="flex flex-col gap-12">
@@ -65,11 +65,11 @@ function ExperienceCard({ experience, index }) {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
-                className="absolute left-8 md:hidden w-4 h-4 bg-emerald-400 rounded-full -translate-x-1/2 shadow-[0_0_15px_rgba(52,211,153,0.8)] z-10"
+                className="absolute left-4 md:hidden w-4 h-4 bg-emerald-400 rounded-full -translate-x-1/2 shadow-[0_0_15px_rgba(52,211,153,0.8)] z-10"
             />
 
             {/* Content Card container - 50% width on Desktop, full width with padding on Mobile */}
-            <div className={`w-full md:w-5/12 ml-16 md:ml-0 pl-0 mt-8 md:mt-0 ${isEven ? 'md:pr-12 lg:pr-16 text-left' : 'md:pl-12 lg:pl-16 text-left'}`}>
+            <div className={`w-full pl-10 mt-8 text-left md:w-5/12 md:mt-0 ${isEven ? 'md:pl-0 md:pr-12 lg:pr-16' : 'md:pl-12 lg:pl-16'}`}>
                 <motion.div
                     initial={{ opacity: 0, x: isEven ? -50 : 50, y: 20 }}
                     animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: isEven ? -50 : 50, y: 20 }}
@@ -78,7 +78,7 @@ function ExperienceCard({ experience, index }) {
                 >
 
                     {/* Header: Role & Date */}
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                    <div className="flex flex-col gap-2 mb-4">
                         <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-white group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition-all">
                             {experience.role}
                         </h3>
@@ -93,9 +93,15 @@ function ExperienceCard({ experience, index }) {
                     </div>
 
                     {/* Description */}
-                    <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
                         {experience.description}
                     </p>
+
+                    <ul className="list-disc space-y-2 pl-5 mb-6 text-slate-300 text-sm md:text-base leading-relaxed">
+                        {experience.highlights.map(highlight => (
+                            <li key={highlight}>{highlight}</li>
+                        ))}
+                    </ul>
 
                     {/* Tech Stack Pills */}
                     <div className="flex flex-wrap gap-2 mt-auto">
