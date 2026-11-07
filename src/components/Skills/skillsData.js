@@ -7,7 +7,7 @@ import { Bot, FlaskConical, Sparkles } from "lucide-react";
 
 export const skillsData = {
     tech: [
-        { name: "PHP 8.4", detail: "Server-side booking and pricing logic", icon: SiPhp, color: "#A8ADE7" },
+        { name: "PHP", detail: "Server-side booking and pricing logic", icon: SiPhp, color: "#A8ADE7" },
         { name: "Laravel", detail: "Production APIs, Eloquent, and migrations", icon: SiLaravel, color: "#FF6B63" },
         { name: "MySQL", detail: "Schema design, indexing, and transactions", icon: SiMysql, color: "#80B7DB" },
         { name: "REST APIs", detail: "Booking, payment, and supplier integrations", icon: MdApi, color: "#FF8C58" },
