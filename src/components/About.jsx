@@ -115,6 +115,7 @@ const About = () => {
                                     I'm <span className="text-white font-bold text-xl">Aung Kyaw Moe</span>, a Full Stack Developer at GMBF Group.
                                     I work mainly with PHP, Laravel, and MySQL on booking, pricing, and payment flows.
                                     I currently own the database and API design for a new hotel booking module and guide its implementation.
+                                    I also build AI agents with the Laravel AI SDK.
                                 </p>
                             </div>
 

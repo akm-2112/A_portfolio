@@ -22,20 +22,7 @@ export default function SkillCard({skill, index}) {
                 </div>
                 <div className="skill-name">{skill.name}</div>
             </div>
-            <div className=" flex justify-around items-center gap-5">
-                <div className="skill-bar">
-                    <motion.div
-                        className="skill-bar-fill"
-                        initial={{width: 0}}
-                        whileInView={{width: `${skill.level}%`}}
-                        viewport={{once: true}}
-                        transition={{duration: 1, ease: "easeInOut"}}
-                    />
-                </div>
-
-
-                <span className="skill-level">{skill.level}%</span>
-            </div>
+            <p className="skill-detail">{skill.detail}</p>
         </motion.div>
     );
 }
